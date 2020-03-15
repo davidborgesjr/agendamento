@@ -16,12 +16,9 @@
 	<description>Agendamento de consultas médicas</description>
 
 	<properties>
-		<appengine.app.version>1</appengine.app.version>
 		<app.id>application api</app.id>
 		<app.version>1</app.version>
 		<java.version>1.8</java.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
