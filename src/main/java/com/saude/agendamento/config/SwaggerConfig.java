@@ -22,7 +22,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.saude.agendaento"))
+                .apis(RequestHandlerSelectors.basePackage("com.saude.agendamento"))
                 .paths(regex("/.*"))
                 .build()
                 .apiInfo(metaInfo());
@@ -31,12 +31,12 @@ public class SwaggerConfig {
     private ApiInfo metaInfo() {
 
         ApiInfo apiInfo = new ApiInfo(
-                "Produtos API REST",
-                "API REST de cadastro de produtos.",
+                "Agendamento API REST",
+                "API REST de agendamento de consultas.",
                 "1.0",
                 "Terms of Service",
-                new Contact("Michelli Brito", "https://www.youtube.com/michellibrito",
-                        "michellidibrito@gmail.com"),
+                new Contact("David Borges", "https://www.linkedin.com/in/david-borges/",
+                        "davidjunior.email@gmail.com"),
                 "Apache License Version 2.0",
                 "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>()
         );

@@ -34,7 +34,6 @@ public class PacienteResource {
 
     @PostMapping("/autenticar")
     public ResultadoAutenticacao getAutenticacao(@RequestBody Autenticacao autenticacao){
-        System.out.println("Dentro da rota de autenticação: ");
         Paciente paciente = pacienteRepository.findByEmailEquals(autenticacao.getEmail());
         ResultadoAutenticacao resultadoAutenticacao = new ResultadoAutenticacao();
 
